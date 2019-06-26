@@ -7,7 +7,7 @@ class ray {
   vec3 A;
   vec3 B;
   ray() {}
-  ray(const vec3& a, vec3& b) {
+  ray(const vec3& a, const vec3& b) {
     A = a;
     B = b;
   }
