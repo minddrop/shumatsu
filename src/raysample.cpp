@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
   int nx = 200;
   int ny = 100;
   ofs << "P3\n" << nx << " " << ny << "\n255\n";
-  vec3 lower_left_corner(-2.0, -1.0, -.10);
+  vec3 lower_left_corner(-2.0, -1.0, -1.0);
   vec3 horizontal(4.0, 0.0, 0.0);
   vec3 vertical(0.0, 2.0, 0.0);
   vec3 origin(0.0, 0.0, 0.0);
