@@ -123,4 +123,4 @@ inline vec3 &vec3::operator/=(const vec3 &v) {
   return *this;
 }
 
-inline vec3 unit_vector(vec3 &v) { return v / v.length(); }
+inline vec3 unit_vector(vec3 v) { return v / v.length(); }
