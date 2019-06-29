@@ -45,5 +45,6 @@ int main(int argc, char* argv[]) {
       ofs << ir << " " << ig << " " << ib << "\n";
     }
   }
+  ofs.close();
   std::cout << "Done!" << std::endl;
 }
