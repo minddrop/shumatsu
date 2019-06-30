@@ -24,8 +24,8 @@ int main(int argc, char* argv[]) {
     return 0;
   }
 
-  int nx = 200;
-  int ny = 100;
+  int nx = 2000;
+  int ny = 1000;
   ofs << "P3\n" << nx << " " << ny << "\n255\n";
   vec3 lower_left_corner(-2.0, -1.0, -1.0);
   vec3 horizontal(4.0, 0.0, 0.0);
@@ -41,11 +41,10 @@ int main(int argc, char* argv[]) {
       float v = float(j) / float(ny);
       ray r(origin, lower_left_corner + u * horizontal + v * vertical);
 
-      // vec3 p = r.point_at_parameter(2.0);
       vec3 col = color(r, world);
-      int ir = int(255.99 * col[0]);
+      int ir = int(255.99 * col[2]);
       int ig = int(255.99 * col[1]);
-      int ib = int(255.99 * col[2]);
+      int ib = int(255.99 * col[0]);
       ofs << ir << " " << ig << " " << ib << "\n";
     }
   }
