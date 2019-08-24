@@ -12,6 +12,7 @@ class sphere : public hitable {
   virtual bool hit(const ray& r, float tmin, float tmax, hit_record& rec) const;
 };
 
+// hit function is a little long so write the implementation outside class
 bool sphere::hit(const ray& r, float t_min, float t_max,
                  hit_record& rec) const {
   vec3 oc = r.origin() - center;
